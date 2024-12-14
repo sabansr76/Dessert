@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-face: 'redhat' , sans-serif;
+}
+
+html,
+body {
+    display: flex;
+    background-color:hsl(20, 50%, 98%);
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: min(max(1rem, calc(0.5rem + 3.5vw)), 3.5rem);
+}
+
+h2 {
+    font-size: min(max(1rem, calc(0.5rem + 2vw)), 2rem);
+}
+
+h3 {
+    font-size: min(max(0.9rem, calc(0.2rem + 1.5vw)), 1.5rem);
+}
+
+h5 {
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1.5rem);
+}
+
+p {
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+span {
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+.btn{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+ul li{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+ul li a{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+a{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+img{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+.btn-bg-lightyellow {
+    padding: 12px 0;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: hsl(71, 73%, 54%);
+    --bs-btn-border-color: hsl(71, 73%, 54%);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: hsl(71, 73%, 54%);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+.min-width {
+    min-width: 300px;
+}
+
+.red-color{
+    color: hsl(14, 86%, 42%);
+}
+
+.red-bg{
+    background-color: hsl(14, 86%, 42%);
+}
+
+.card-button-1{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: max-content;
+    border:1px solid hsl(14, 87%, 26%);
+}
+
+.card-button-1:hover{
+    background-color: white;
+    width: max-content;
+    border:1px solid hsl(14, 87%, 26%);
+}
+
+
+.sidebar {
+    height: max-content;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #cacaca;
+}
+
+
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+.image-container{
+    max-width: 370px;
+}
+
+.icon-container{
+    max-width: 20px;
+}
+
+.bg-cream{
+    background-color: #fcf8f5;
+}
+.delete-container{
+    width: 15px;
+    aspect-ratio: 1;
+    padding: 0;
+}
+
+.modal-image-container{
+    max-width: 44px;
+    aspect-ratio: 1;
+}
+
+.modal-min-width{
+    min-width: 280px;
+}
+
+.card-description{
+    font-size: min(max(1rem, calc(0.2rem + 2vw)), 1.1rem);
+}
+
+@media (max-width: 575px) {
+    .cart-container{
+        max-width: 370px;
+    }
+}
