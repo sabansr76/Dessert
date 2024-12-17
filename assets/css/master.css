@@ -1,8 +1,24 @@
+root{
+    --clr-red: hsl(14, 86%, 42%);
+    --clr-green: hsl(159, 69%, 38%);
+
+    --clr-rose-50: hsl(20, 50%, 98%);
+    --clr-rose-100: hsl(13, 31%, 94%);
+    --clr-rose-300: hsl(14, 25%, 72%);
+    --clr-rose-400: hsl(7, 20%, 60%);
+    --clr-rose-500: hsl(12, 20%, 44%);
+    --clr-rose-900: hsl(14, 65%, 9%);
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-face: 'redhat' , sans-serif;
+    font-face: 'redhat';
 }
 
 html,
@@ -62,26 +78,6 @@ button:focus {
     outline: none;
 }
 
-
-.btn-bg-lightyellow {
-    padding: 12px 0;
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: hsl(71, 73%, 54%);
-    --bs-btn-border-color: hsl(71, 73%, 54%);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
-    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
-    --bs-btn-focus-shadow-rgb: hsl(71, 73%, 54%);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
-    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
-}
-
-.min-width {
-    min-width: 300px;
-}
-
 .red-color{
     color: hsl(14, 86%, 42%);
 }
@@ -90,21 +86,51 @@ button:focus {
     background-color: hsl(14, 86%, 42%);
 }
 
-.card-button-1{
+.red-bg:hover{
+    background-color: hsl(14, 87%, 26%);
+}
+
+.card-button{
     top: 0;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
-    width: max-content;
+    width: 150px;
     border:1px solid hsl(14, 87%, 26%);
 }
 
-.card-button-1:hover{
-    background-color: white;
-    width: max-content;
-    border:1px solid hsl(14, 87%, 26%);
+.card-button:hover{
+    background-color: hsl(14, 86%, 42%);
+    border:1px solid white;
+    color: white;
 }
 
+.card-button:hover span{
+    display: none;
+}
+
+.card-button:hover:before {
+    display: block;
+    content: url("public/images/icon-decrement-quantity.svg");
+    position: absolute;
+    left: 10%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    aspect-ratio: 1;
+}
+
+.card-button:hover:after {
+    display: block;
+    content: url("public/images/icon-increment-quantity.svg");
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 22px;
+    aspect-ratio: 1;
+}
 
 .sidebar {
     height: max-content;

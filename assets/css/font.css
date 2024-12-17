@@ -1,20 +1,20 @@
 @font-face {
     font-family: redhat;
-    src: url("../../pulic/fonts/redhat/RedHatText-Regular.ttf");
+    src: url("../../public/fonts/redhat/RedHatText-Regular.ttf");
     font-weight: 400;
     unicode-range: U+1780-17FF, U+200B-200C, U+25CC;/* English (Latin) Unicode range */
 }
 
 @font-face {
     font-family: redhat;
-    src: url("../../pulic/fonts/redhat/RedHatText-SemiBold.ttf");
+    src: url("../../public/fonts/redhat/RedHatText-SemiBold.ttf");
     font-weight: 600;
     unicode-range: U+1780-17FF, U+200B-200C, U+25CC;/* English (Latin) Unicode range */
 }
 
 @font-face {
     font-family: redhat;
-    src: url("../../pulic/fonts/redhat/RedHatText-Bold.ttf");
+    src: url("../../public/fonts/redhat/RedHatText-Bold.ttf");
     font-weight: 700;
     unicode-range: U+1780-17FF, U+200B-200C, U+25CC;/* English (Latin) Unicode range */
 }
